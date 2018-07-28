@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>operation</display-name>
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>10086</param-value>
+    </context-param>
+	<context-param>
+        <param-name>endsymbol</param-name>
+        <param-value>!!!@@@###</param-value>
+    </context-param>
+    <context-param>
+        <param-name>TimeIntervalBetweenTrainingSending</param-name>
+        <param-value>2000</param-value>
+    </context-param>
+    <context-param>
+        <param-name>filepath</param-name>
+        <param-value>D://a.xml</param-value>
+    </context-param>
+	 <context-param>
+        <param-name>ipfilepath</param-name>
+        <param-value>D://c</param-value>
+    </context-param>
+	<listener>
+  		<listener-class>org.atm.dc.app.UdpListener3</listener-class>
+  	</listener>
+
+</web-app>
+        
